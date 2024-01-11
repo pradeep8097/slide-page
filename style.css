@@ -1,0 +1,109 @@
+body {
+  background-color: #073b4c;
+ }
+ 
+ .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+ }
+ 
+ h2 {
+  animation: 1s blink linear infinite;
+  display: flex;
+  justify-content: center;
+ }
+
+ img{
+  height: 268px;
+  width: 253px;
+ }
+ 
+ .Card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+ }
+ 
+ .cardFront {
+  position: relative;
+  background-color: #050505;
+  width: 250px;
+  height: 570px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 30px 0 50px rgba(0, 0, 0, 0.4);
+  transition: .6s;
+ }
+ 
+ .happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 2px;
+  background-color: #110e0e;
+  transition: .1s;
+  color: #655858;
+ }
+ 
+ .cardInside {
+  position: absolute;
+  background-color: #110e0e;
+  width: 250px;
+  height: 570px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+ }
+ 
+ p {
+  font-family: cursive;
+  margin: 15px 10px 10px 30px;
+  color: #797878;
+ }
+ 
+ .name {
+  
+  padding-left: 140px;
+  /* top: 200px; */
+  color: #797878;
+  text-decoration: underline;
+ }
+ 
+ .back {
+  font-family: Tahoma, sans-serif;
+  color: #797878;
+  text-align: center;
+  margin: 30px;
+  outline-color: #333;
+  outline-style: dashed;
+ }
+ 
+ .Card:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 0 10px 100px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .Card:hover .cardFront {
+  transform: rotateY(-160deg);
+ }
+ 
+ .Card:hover .happy {
+  visibility: hidden;
+ }
+ 
+
+ footer{
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+ }
+ footer a{
+  color: white;
+ }
